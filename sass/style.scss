@@ -1,0 +1,260 @@
+@import 'reset';
+@import 'fontello.css';
+
+@font-face {
+  font-family: roboto;
+  src: url("../fonts/roboto.ttf"); }
+
+  @font-face {
+  font-family: roboto-reg;
+  src: url("../fonts/Roboto-Regular.ttf"); }
+
+
+@font-face {
+  font-family: caslon;
+  src: url("../fonts/CaslonCP.otf"); }
+.main{
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	width: 100%;
+	height: 100vh;
+	/*min-height: 400px;*/
+
+	.left_column{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+		width: 7%;
+		background-color: #cac0b3;
+
+		p{
+			-webkit-transform: rotate(90deg);
+			transform: rotate(90deg);
+			margin-bottom: 75px;
+			font-family: roboto;
+			font-size: 18px;
+			color: #fbfbfa;
+		}
+
+		ul{
+			
+			a{
+				li{
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: flex;
+					margin-bottom: 10px;
+					-webkit-box-align: center;
+					-ms-flex-align: center;
+					align-items: center;
+					-webkit-box-pack: center;
+					-ms-flex-pack: center;
+					justify-content: center;
+
+					.icon-instagram,
+					.icon-twitter,
+					.icon-facebook{
+						color: black;
+						-webkit-transform: rotate(90deg);
+						transform: rotate(90deg);
+					}
+
+					.icon-instagram:hover,
+					.icon-twitter:hover,
+					.icon-facebook:hover{
+						color: orange;
+						-webkit-transition: all .5s ease-in-out;
+						transition: all .5s ease-in-out;
+					}
+
+				}
+			}
+		}
+	}
+
+	.right_column{
+		background: url(../img/headphones.png) no-repeat 50% -90%;
+		background-size: 40%;
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		width: 93%;
+		background-color: #eaeaea;
+		.top{
+			position: relative;
+			z-index: 11;
+			width: 100%;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			nav{
+				margin-left: 100px;
+				margin-top: 30px;
+
+				a{
+					display: -webkit-inline-box;
+					display: -ms-inline-flexbox;
+					display: inline-flex;
+					text-decoration: none;
+					margin-right: 20px;
+					font-family: roboto-reg;
+					color: #92979a;
+					font-size: 16px;
+				}
+				a:hover{
+					color: red;
+					-webkit-transition: all 1s ease;
+					transition: all 1s ease;
+				}
+			}
+
+			.menu{
+				position: relative;
+				z-index: 10;
+				width: 130px;
+				height: 130px;
+				background-color: #cac0b3;
+				border-radius: 5px 0 5px 100px;
+				img{
+					position: absolute;
+					top: 40px;
+					left: 61px;
+				}
+			}
+		}
+
+		.headphones{
+			width: 100%;
+			height: 100%;
+			margin-bottom: 35px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-align: end;
+			-ms-flex-align: end;
+			align-items: center;
+			-webkit-box-pack: end;
+			-ms-flex-pack: end;
+			justify-content: flex-end;
+			span{
+				font-family: caslon, 'Times New Roman';
+				color: #e74c54;
+				font-size: 70px;
+				text-transform: uppercase;
+				letter-spacing: 10px;
+			}
+
+			p{
+				font-family: roboto-reg, 'Times New Roman';
+				color: #999999;
+				font-size: 18px;
+				margin: 20px 0;
+			}
+
+			button{
+				margin: 0 10px;
+				padding: 0;
+				width: 260px;
+				height: 50px;
+				/*background: url(../img/rect.png) #e64c54 no-repeat 20% 50%;*/
+				background-color: #e64c54;
+				border: none;
+				outline: none;
+				border-radius: 50px;
+				font-family: roboto;
+				color: #fff;
+				text-transform: uppercase;
+				-webkit-transition: all 1s ease-in-out;
+				transition: all 1s ease-in-out;
+
+				img{
+					margin-right: 10px;
+				}
+
+			}
+			button:hover{
+				background-color: darken(#e64c54,20%);
+			}
+		}
+
+		.rectangle{
+			position: absolute;
+			bottom: 0px;
+			left: 90px;
+			border-radius: 100px 100px 0 0;
+			width: 10%;
+			height: 10%;
+			background-color: #e0ddd9;
+		}
+
+		.contacts{
+			margin-bottom: 40px;
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: -webkit-inline-box;
+			display: inline-flex;
+			position: absolute;
+			bottom: 0px;
+			right: 100px;
+			ul{
+				a{
+					font-family: roboto-reg;
+					color: #92979a;
+					font-size: 18px;
+					margin-right: 15px;
+					text-decoration: none;
+					li{
+						display: -webkit-inline-box;
+						display: -ms-inline-flexbox;
+						display: inline-flex;
+					}
+
+				}
+
+				a:hover{
+					color: red;
+					-webkit-transition: all .5s ease-in-out;
+					-webkit-transition: all 1s ease-in-out;
+					transition: all 1s ease-in-out;
+				}
+
+				a:nth-child(2n){
+					margin-right: 30px;
+				}
+			}
+
+		}
+		.blue_hd{
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+			width: 100px;
+			height: 100px;
+			background: url(../img/headphones2.png) no-repeat;
+			background-size: 85%;
+		}
+	}
+
+}
